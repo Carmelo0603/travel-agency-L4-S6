@@ -1,19 +1,32 @@
 @import "./scss/functions";
 @import "./scss/variables";
-//Codice qqi sotto
+
+//font
 $new-font-size-7: 1rem;
 $new-font-size-8: 0.75rem;
 $new-font-size-9: 0.5rem;
 $new-font-size-10: 0.25rem;
 
 $new-font-sizes: (
-  "fs-7": $new-font-size-7,
-  "fs-8": $new-font-size-8,
-  "fs-9": $new-font-size-9,
-  "fs-10": $new-font-size-10,
+  7: $new-font-size-7,
+  8: $new-font-size-8,
+  9: $new-font-size-9,
+  10: $new-font-size-10,
 );
 
 $font-sizes: map-merge($font-sizes, $new-font-sizes);
+
+//border
+
+$new-border-widths: (
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
+);
+
+$border-widths: map-merge($border-widths, $new-border-widths);
 
 //sempre alla fine
 @import "./scss/bootstrap.scss";
